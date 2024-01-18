@@ -1,0 +1,25 @@
+{
+	"manifest_version": 3,
+	"name": "Issue Downloader",
+	"version": "1.0.0",
+	"author": "jackytsheng@gmail.com",
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"host_permissions": [
+		"https://xero.atlassian.net/browse/*"
+	],
+	"permissions": [
+		"tabs"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://xero.atlassian.net/browse/*"
+			],
+			"js": [
+				"content-script.js"
+			]
+		}
+	]
+}

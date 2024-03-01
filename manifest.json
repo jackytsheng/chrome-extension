@@ -6,11 +6,16 @@
 	"action": {
 		"default_popup": "popup.html"
 	},
+	"background": {
+		"service_worker": "background.js"
+	},
 	"host_permissions": [
 		"https://xero.atlassian.net/browse/*"
 	],
 	"permissions": [
-		"tabs"
+		"tabs",
+		"activeTab",
+		"scripting"
 	],
 	"content_scripts": [
 		{
